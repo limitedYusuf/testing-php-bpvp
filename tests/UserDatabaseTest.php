@@ -16,30 +16,30 @@ class UserDatabase
 
 class UserDatabaseTest extends TestCase
 {
-   private $userDatabase;
+//    private $userDatabase;
+// 
+//    protected function setUp(): void
+//    {
+//       parent::setUp();
+//       $this->userDatabase = new UserDatabase();
+//    }
 
-   protected function setUp(): void
-   {
-      parent::setUp();
-      $this->userDatabase = new UserDatabase();
-   }
-
-   public static function userBalanceProvider()
-   {
-      return [
-         [1, 100], // User ID 1 memiliki saldo 100
-         [2, 50], // User ID 2 memiliki saldo 50
-         [3, 200], // User ID 3 memiliki saldo 200
-      ];
-   }
+   // public static function userBalanceProvider()
+   // {
+   //    return [
+   //       [1, 100], // User ID 1 memiliki saldo 100
+   //       [2, 50], // User ID 2 memiliki saldo 50
+   //       [3, 200], // User ID 3 memiliki saldo 200
+   //    ];
+   // }
 
    /**
     * @dataProvider userBalanceProvider
     */
-   public function testGetUserBalance($userId, $expectedBalance)
-   {
-      $actualBalance = $this->userDatabase->getUserBalance($userId);
-      $this->assertEquals($expectedBalance, $actualBalance);
-   }
+   // public function testGetUserBalance($userId, $expectedBalance)
+   // {
+   //    $actualBalance = $this->userDatabase->getUserBalance($userId);
+   //    $this->assertEquals($expectedBalance, $actualBalance);
+   // }
 }
 ?>

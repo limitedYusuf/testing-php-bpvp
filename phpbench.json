@@ -1,0 +1,12 @@
+{
+    "$schema": "https://json-schema.org/draft/07/schema#",
+    "bootstrap": "vendor/autoload.php",
+    "path": "tests/PerformanceTest.php",
+    "runner": "progress",
+    "executor": {
+        "class": "PhpBench\\Executor\\MicrotimeExecutor",
+        "stop_on_error": true,
+        "retry_threshold": 0
+    },
+    "iterations": 1000
+}

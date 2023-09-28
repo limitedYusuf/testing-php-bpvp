@@ -13,5 +13,10 @@ class Calculator
    {
       return $a - $b;
    }
+
+   public function calculate()
+   {
+      return 1 + 2;
+   }
 }
 ?>
